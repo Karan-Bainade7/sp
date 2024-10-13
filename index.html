@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karan Bainade's portfolio showcasing software development projects and skills." />
+    <meta name="keywords" content="Karan Bainade, Software Developer, Full-Stack Developer, Portfolio" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Karan Bainade Portfolio</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="logo">Karan.io</div>
+        <ul class="nav-links hidden" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+<style>/* CSS Keyframes for Fade-In */
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Profile Section Styling */
+    .section__text__p1,
+    .section__text__p2,
+    #profile h1 {
+        opacity: 0;
+        animation: fadeIn 1s ease forwards; /* Apply animation */
+    }
+    
+    /* Stagger Animation Start Times */
+    .section__text__p1 {
+        animation-delay: 0.5s;
+    }
+    
+    #profile h1 {
+        animation-delay: 1s;
+    }
+    
+    .section__text__p2 {
+        animation-delay: 1.5s;
+    }
+    </style>
+    
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">Hi, I am</p>
+            <h1>Karan Bainade</h1>
+            <p class="section__text__p2">Software Developer / Full-Stack Developer</p>
+            <div id="socials-container">
+                <img src="https://img.icons8.com/material-outlined/24/000000/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/Karan-Bainade7/'" />
+                <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/karan-bainade-a4b936188/'" />
+               
+            </div>
+            <div id="resume-button">
+                <button class="btn-resume" onclick="location.href='Karan_Bainade.pdf'">Download Resume</button>
+            </div>
+        </div>
+        <div class="section__pic-container">
+            <img src="kb.jpg" alt="Karan Bainade profile picture" />
+        </div>
+    </section>
+
+ <!-- About section -->
+    <section id="about">
+    <div class="container">
+        <div class="about-title">ABOUT ME</div>
+        <p class="about-text">
+            Fresher software developer skilled in JavaScript, Python, SQL, and cloud platforms. Eager to build efficient, user-friendly applications and continuously learn in a dynamic environment.
+        </p>
+
+        <a href="#" class="explore-button">Explore</a>
+
+        <hr style="width: 60px; border: 1px solid #333; margin: 20px auto;">
+
+        <div class="services">
+            <!-- Design Service -->
+            <div class="service-item">
+                <img src="https://img.icons8.com/ios-filled/100/333333/design.png" alt="Design Icon">
+                <h3 class="service-title">DESIGN</h3>
+                <p class="service-desc">I can design the site based on your needs and suggestions. I can also create the site from scratch and consult you during the job.</p>
+            </div>
+
+            <!-- Development Service -->
+            <div class="service-item">
+                <img src="https://img.icons8.com/ios-filled/100/333333/developer.png" alt="Development Icon">
+                <h3 class="service-title">DEVELOPMENT</h3>
+                <p class="service-desc">I can design and develop websites based on your requirements and ensure functionality and performance during the job.</p>
+            </div>
+
+            <!-- Maintenance Service -->
+            <div class="service-item">
+                <img src="https://img.icons8.com/ios-filled/100/333333/maintenance.png" alt="Maintenance Icon">
+                <h3 class="service-title">MAINTENANCE</h3>
+                <p class="service-desc">I provide maintenance and updates to ensure your website is always up-to-date, secure, and running smoothly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+    <div class="container">
+        <!-- Skills Title -->
+        <div class="section-title">Skills</div>
+
+        <!-- Front-End Development Skills Section -->
+        <div class="skills-section">
+            <h2 class="skills-title">Front-End Development Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Logo">
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-description">Structured layouts and web styling</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Logo">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-description">Core concepts & DOM manipulation</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React Logo">
+                    <div class="skill-name">React.js</div>
+                    <div class="skill-description">Component-based UI frameworks</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap Logo">
+                    <div class="skill-name">Bootstrap</div>
+                    <div class="skill-description">Responsive design framework</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back-End Development Skills Section -->
+        <div class="skills-section">
+            <h2 class="skills-title">Back-End Development Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919852.png" alt="Node.js Logo">
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-description">Server-side applications</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721299.png" alt="Django Logo">
+                    <div class="skill-name">Django</div>
+                    <div class="skill-description">Scalable web frameworks</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="Express Logo">
+                    <div class="skill-name">Express.js</div>
+                    <div class="skill-description">RESTful API development</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL Logo">
+                    <div class="skill-name">MySQL</div>
+                    <div class="skill-description">Database management</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Stack Technologies Section -->
+        <div class="skills-section">
+            <h2 class="skills-title">Full-Stack Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/518/518705.png" alt="MEAN/MERN Stack">
+                    <div class="skill-name">MEAN/MERN Stack</div>
+                    <div class="skill-description">MongoDB, Express, React, Node.js</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="LAMP Stack">
+                    <div class="skill-name">LAMP Stack</div>
+                    <div class="skill-description">Linux, Apache, MySQL, PHP</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills Section -->
+        <div class="skills-section">
+            <h2 class="skills-title">Soft Skills & Additional Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Problem Solving">
+                    <div class="skill-name">Problem-Solving</div>
+                    <div class="skill-description">Debugging and code optimization</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1611/1611290.png" alt="Team Collaboration">
+                    <div class="skill-name">Team Collaboration</div>
+                    <div class="skill-description">Cross-functional teamwork</div>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/295/295128.png" alt="Git">
+                    <div class="skill-name">Git</div>
+                    <div class="skill-description">Version control and collaboration</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <h1>My Projects</h1>
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">E-commerce Website</h2>
+                        <p class="card-text">
+                            Developed a fully functional e-commerce website using HTML, CSS, JavaScript, React JS and Tailwind CSS, featuring user-friendly navigation, product management, and an admin panel.                        </p>
+                        <a href="https://github.com/Karanb123/eCommerce-Website-Web-App" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">User Management System</h2>
+                        <p class="card-text">
+                           Developed a Django app with role-based access for Admins and Customers, featuring user management, profile updates, and image uploads using Bootstrap and Crispy Forms.
+                        </p>
+                        <a href="" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">To-Do List Application</h2>
+                        <p class="card-text">
+                            Developed a PHP and MySQL web application with a user-friendly interface using HTML, CSS, and JavaScript, enabling users to add, view, update, delete tasks, and mark tasks as completed.
+                        </p>
+                        <a href="https://github.com/Karanb123/Todo_List_Application" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Tour Travel Website</h2>
+                        <p class="card-text">
+                            Utilized HTML to structure the webpage with a header, navigation, hero section, and footer; styled elements with CSS for colors, fonts, and layout; and integrated JavaScript for future interactivity enhancements.
+                        </p>
+                        <a href="https://github.com/Karanb123/Karan-tour-website" target="_blank" class="btn btn-primary">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Experience Section -->
+<section id="experience" class="container">
+    <h1>My Experience</h1>
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card experience-card">
+                <div class="card-body">
+                    <h2 class="card-title">Python Development Intern</h2>
+                    <h6 class="card-subtitle mb-2 text-muted">CodeClause - Pune Camp, Maharashtra (Jan 2023 - Feb 2023)</h6>
+                    <p class="card-text">
+                        Developed scalable Python applications, including data processing and automation tools, enhancing system efficiency by 35%. Automated repetitive tasks using Python scripts, reducing manual effort by 40%.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card experience-card">
+                <div class="card-body">
+                    <h2 class="card-title">Python Django Intern</h2>
+                    <h6 class="card-subtitle mb-2 text-muted">Suven Consultants & Technology Pvt. Ltd. - Remote (Feb 2023 - Mar 2023)</h6>
+                    <p class="card-text">
+                        Gained hands-on experience in developing web applications using the Django framework. Worked on implementing dynamic arrays, linked lists, and binary search trees, optimizing algorithmic solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card experience-card">
+                <div class="card-body">
+                    <h2 class="card-title">Android Developer Intern</h2>
+                    <h6 class="card-subtitle mb-2 text-muted">Maverick Networks Pvt. Ltd. - Aurangabad, Maharashtra (Jul 2020)</h6>
+                    <p class="card-text">
+                        Gained hands-on experience in Android development, utilizing Java and XML to create robust and user-friendly mobile applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card experience-card">
+                <div class="card-body">
+                    <h2 class="card-title">Front-End Developer Intern</h2>
+                    <h6 class="card-subtitle mb-2 text-muted">Digispect Technologies - Aurangabad, Maharashtra (Aug 2024 - Oct 2024)</h6>
+                    <p class="card-text">
+                        Created responsive web interfaces using HTML, CSS, JavaScript, and React. Collaborated with designers using Figma to implement user interfaces based on design mockups, ensuring cross-browser compatibility.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card experience-card">
+                <div class="card-body">
+                    <h2 class="card-title">Web Development Intern</h2>
+                    <h6 class="card-subtitle mb-2 text-muted">MyTech Solutions - Aurangabad, Maharashtra (Feb 2024 - Aug 2024)</h6>
+                    <p class="card-text">
+                        Worked on both front-end and back-end technologies including HTML, CSS, JavaScript, React, and Node.js. Developed dynamic web pages and implemented RESTful APIs for seamless data handling.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+        
+
+ <!-- Contact Section -->
+ <section id="contact">
+<div class="contact-section">
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h2>Getting in touch is easy!</h2>
+      <p> Cidco, Chhatrapati Sambhajinagar, Maharashtra, India.</p>
+      <p>+91 7666163841</p>
+      <p>bainadekaran7@gmail.com</p>
+      <div class="social-icons">
+        
+        <a href="https://www.linkedin.com/in/karanbainade/" target="_blank" class="text-dark"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="https://github.com/Karan-Bainade7/" target="_blank" class="text-dark"><img src="images/github.png" alt="Github" /></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bainadekaran7@gmail.com" target="_blank" class="text-dark">
+            <img src="images/social.png" alt="Email" />
+        </a>
+        
+        </a>
+        
+       
+      </div>
+    </div>
+  
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>SEND ME A MESSAGE</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Write us about any project. We'd love to work with you!" required></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+  </div>
+</section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="back-to-top">Back to Top</div>
+
+    <p>&copy; 2024 Karan Bainade. All rights reserved.</p>
+  </footer>
+
+
+ 
+  
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
